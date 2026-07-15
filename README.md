@@ -1,7 +1,7 @@
 ```mermaid
 flowchart TD
 
-    X(["Phase 2 - Event Request Approval"])
+    X(["Phase 1 - Event Request Approval"])
 
     A1["Sector Requester<br>Submit Request"] --> B1["HR_NHC_Engagement Group<br>Approval"]
     B1 --> C1["HR_NHC_Engagement CXO<br>Approval"]
@@ -11,6 +11,9 @@ flowchart TD
     X --> A1
 
     Y(["Phase 2 - PO Process"])
+
+    E1 --> Y
+
 
     A2["Administrative Affairs<br>Request PO"] --> B2["Finance<br>Approval"]
     B2 --> C2["Administrative Affairs<br>Ready to Proceed"]
