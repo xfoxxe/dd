@@ -1,6 +1,6 @@
 ```mermaid
 flowchart LR
-    A[Employee Request]
+    A((Employee Request))
     B[HR NHC Engagement]
     C[Administrative Affairs]
     D[Employee CXO]
