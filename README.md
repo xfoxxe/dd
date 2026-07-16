@@ -1,25 +1,19 @@
 ```mermaid
-flowchart TD
+flowchart LR
+    A[Employee Request]
+    B[HR NHC Engagement]
+    C[Administrative Affairs]
+    D[Employee CXO]
 
-    X(["Phase 1 - Event Request Approval"])
+    E[FYI: HR Engagement]
+    F[FYI: Admin]
+    G[FYI: Internal]
 
-    A1["Sector Requester<br>(Submit Request)"] --> B1["HR_NHC_Engagement Group<br>(Approval)"]
-    B1 --> C1["HR_NHC_Engagement CXO<br>(Approval)"]
-    C1 --> D1["Administrative Affairs<br>(Total Cost Calculation)"]
-    D1 --> E1["Requesting Sector CXO<br>(Event & Cost Approval)"]
+    A --> B
+    B --> C
+    C --> D
 
-    X --> A1
-
-    Y(["Phase 2 - PO Process"])
-
-    E1 --> Y
-
-
-    A2["Administrative Affairs<br>(Request PO)"] --> B2["Finance<br>(Approval)"]
-    B2 --> C2["Administrative Affairs<br>(Ready to Proceed)"]
-    C2 --> D2["HR<br>(FYI Notification)"]
-    C2 --> E2["Internal Communications<br>(FYI Notification)"]
-    C2 --> F2["Administrative Affairs CXO<br>(FYI Notification)"]
-
-    Y --> A2
+    D -.-> E
+    D -.-> F
+    D -.-> G
 ```
