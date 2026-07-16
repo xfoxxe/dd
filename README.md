@@ -5,9 +5,9 @@ flowchart LR
     C[Administrative Affairs]
     D[Employee requester CXO]
 
-    E(FYI: HR Engagement)
-    F[FYI: Admin]
-    G[FYI: Internal]
+    E([FYI: HR Engagement])
+    F([FYI: Admin])
+    G([FYI: Internal])
 
     A --> B
     B --> C
